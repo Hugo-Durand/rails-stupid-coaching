@@ -1,3 +1,19 @@
-<h1>hehe tu a réussi </h1>
+<h1>Stupid Coach</h1>
 
-<p><%= @ask %></p>
+<div id="asked">
+  <p><%= @ask %></p>
+  <p>-You</p>
+</div>
+<div id="answer">
+  <%if @ask.include? "?" %>
+    <p><%= "Silly question, get dressed and go to work!" %></p>
+    <p>-Your Coach</p>
+  <%elsif @ask.include? "I am going to work" %>
+    <p><%= "Great!" %></p>
+    <p>-Your Coach</p>
+  <%else %>
+    <p><%= "I don't care, get dressed and go to work!" %></p>
+    <p>-Your Coach</p>
+  <% end %>
+</div>
+<%= link_to "Ask a new question" , "/ask", :class   => "btn btn-primary" %>

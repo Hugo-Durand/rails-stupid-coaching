@@ -13,3 +13,25 @@
  *= require_tree .
  *= require_self
  */
+body {
+  padding: 5px;
+}
+
+h1{
+  padding: 10px;
+}
+
+p {
+  padding-left: 5px;
+}
+
+#asked {
+  border-left: hotpink solid;
+  border-width: 5px;
+}
+
+#answer {
+  border-left: hotpink solid;
+  border-width: 5px;
+  background-color: #FFFACD;
+}
